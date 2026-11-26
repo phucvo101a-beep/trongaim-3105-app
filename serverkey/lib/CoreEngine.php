@@ -1,6 +1,6 @@
 <?php
 /**
- * PHUCVN 3105 - V3 Cryptographic Auth Engine (PHP ext-sodium fallback matching serverkey_core Rust)
+ * Tobi AIM - V3 Cryptographic Auth Engine (PHP ext-sodium fallback matching serverkey_core Rust)
  */
 
 final class CoreEngine {

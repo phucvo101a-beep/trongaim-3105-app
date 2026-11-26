@@ -1,6 +1,6 @@
 <?php
 /**
- * PHUCVN STUDIO - Admin Control Panel
+ * Tobi AIM - Admin Control Panel
  * Quản lý 5 loại key bản quyền: 1 giờ, 1 ngày, 7 ngày, 30 ngày, vĩnh viễn
  */
 require_once __DIR__ . '/config.php';
@@ -300,7 +300,7 @@ if ($isLoggedIn && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action
         $keys = getKeys();
         $createdKeys = [];
         for ($k = 0; $k < $qty; $k++) {
-            $keyCode = 'PHUCVN-' . $prefix . strtoupper(substr(bin2hex(random_bytes(3)), 0, 4) . '-' . substr(bin2hex(random_bytes(3)), 0, 4));
+            $keyCode = 'TOBIAIM-' . $prefix . strtoupper(substr(bin2hex(random_bytes(3)), 0, 4) . '-' . substr(bin2hex(random_bytes(3)), 0, 4));
             $keys[] = [
                 'key' => $keyCode,
                 'duration' => $duration, // 1h, 1d, 7d, 30d, permanent
@@ -454,8 +454,8 @@ if ($isLoggedIn && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action
 
     // 8. Cập nhật Cài đặt hệ thống
     elseif ($act === 'update_settings') {
-        $settings['app_name'] = trim($_POST['app_name'] ?? 'PHUCVN STUDIO');
-        $settings['admin_user'] = trim($_POST['admin_user'] ?? 'phucvn_admin');
+        $settings['app_name'] = trim($_POST['app_name'] ?? 'Tobi AIM');
+        $settings['admin_user'] = trim($_POST['admin_user'] ?? 'tobiaim_admin');
         if (!empty($_POST['admin_pass'])) {
             $settings['admin_pass_hash'] = hashUserPassword(trim($_POST['admin_pass']));
         }
@@ -779,9 +779,9 @@ foreach ($allKeys as $k) {
     <div class="login-wrap">
         <div class="login-box" style="text-align: center;">
             <div style="margin-bottom: 16px;">
-                <img src="assets/logo.png" alt="PHUCVN" style="width: 72px; height: 72px; border-radius: 50%; box-shadow: 0 0 25px rgba(168, 85, 247, 0.45); border: 2px solid rgba(168, 85, 247, 0.5);">
+                <img src="assets/logo.png" alt="Tobi AIM" style="width: 72px; height: 72px; border-radius: 50%; box-shadow: 0 0 25px rgba(168, 85, 247, 0.45); border: 2px solid rgba(168, 85, 247, 0.5);">
             </div>
-            <h2 style="font-size: 22px; font-weight: 800; margin-bottom: 4px; color: #fff; letter-spacing: 0.5px;">PHUCVN STUDIO</h2>
+            <h2 style="font-size: 22px; font-weight: 800; margin-bottom: 4px; color: #fff; letter-spacing: 0.5px;">Tobi AIM</h2>
             <p style="font-size: 11px; font-weight: 700; color: #22d3ee; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 22px;">Cổng Quản Trị Server Key iOS</p>
 
             <?php if (!empty($error)): ?>
@@ -808,8 +808,8 @@ foreach ($allKeys as $k) {
                 <i class="fa-solid fa-laptop-code" style="color: #22d3ee;"></i> Bảo mật 1 Thiết Bị: Mỗi tài khoản chỉ được phép đăng nhập cố định trên 1 thiết bị (HWID).
             </div>
             <div style="text-align: center; margin-top: 18px; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 16px;">
-                <a href="https://phuciosvn.com/" target="_blank" style="color: #22d3ee; text-decoration: none; font-size: 12.5px; font-weight: 600;">
-                    <i class="fa-solid fa-cart-shopping"></i> Truy cập Shop: phuciosvn.com
+                <a href="https://tobivn.chickenkiller.com/" target="_blank" style="color: #22d3ee; text-decoration: none; font-size: 12.5px; font-weight: 600;">
+                    <i class="fa-solid fa-globe"></i> Tobi AIM Server Key
                 </a>
             </div>
         </div>
@@ -819,7 +819,7 @@ foreach ($allKeys as $k) {
             function computeAdminDeviceFp() {
                 var lid = '';
                 try {
-                    lid = localStorage.getItem('phucvn_srv_local_id') || '';
+                    lid = localStorage.getItem('tobiaim_srv_local_id') || '';
                     if (!lid) {
                         if (window.crypto && window.crypto.getRandomValues) {
                             var buf = new Uint8Array(16);
@@ -828,7 +828,7 @@ foreach ($allKeys as $k) {
                         } else {
                             lid = String(Date.now()) + '-' + Math.random().toString(36).slice(2) + '-' + Math.random().toString(36).slice(2);
                         }
-                        localStorage.setItem('phucvn_srv_local_id', lid);
+                        localStorage.setItem('tobiaim_srv_local_id', lid);
                     }
                 } catch (e) {
                     lid = 'nolocal';
@@ -864,7 +864,7 @@ foreach ($allKeys as $k) {
                 <i class="fa-solid fa-user-shield" style="color: #34d399;"></i>
                 <strong style="color: #fff;"><?= htmlspecialchars($_SESSION['admin_current_user'] ?? $settings['admin_user']) ?></strong>
             </span>
-            <a href="https://phuciosvn.com/" target="_blank" class="nav-btn"><i class="fa-solid fa-cart-shopping"></i> Xem Shop phuciosvn.com</a>
+            <a href="https://tobivn.chickenkiller.com/" target="_blank" class="nav-btn"><i class="fa-solid fa-globe"></i> Tobi AIM</a>
             <a href="admin.php?action=logout" class="nav-btn logout"><i class="fa-solid fa-power-off"></i> Đăng Xuất</a>
         </div>
     </nav>

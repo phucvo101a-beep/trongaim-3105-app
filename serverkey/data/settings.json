@@ -1,6 +1,6 @@
 {
-  "app_name": "PHUCVN STUDIO",
-  "admin_user": "phucvn_admin",
+  "app_name": "Tobi AIM",
+  "admin_user": "tobiaim_admin",
   "admin_pass_hash": "",
   "allow_register": false,
   "require_key": true,
@@ -8,7 +8,7 @@
   "default_duration": "30d",
   "bind_hwid": true,
   "allow_hwid_reset": false,
-  "telegram_support": "https://t.me/phuciosvn",
+  "telegram_support": "",
   "server_open": true,
   "system_paused": false,
   "server_closed_message": "Hệ thống máy chủ đang tạm đóng để bảo trì. Vui lòng quay lại sau.",
