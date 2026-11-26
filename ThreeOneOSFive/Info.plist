@@ -5,7 +5,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>vi</string>
     <key>CFBundleDisplayName</key>
-    <string>3105 x Tobi Aim</string>
+    <string>Tobi AIM</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
-    <string>3105 x Tobi Aim</string>
+    <string>Tobi AIM</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
@@ -104,7 +104,7 @@
         </dict>
     </array>
     <key>NSLocalNetworkUsageDescription</key>
-    <string>3105 x Tobi Aim cần quyền Mạng cục bộ để kết nối dịch vụ LocalDev/Lockdown trên thiết bị phục vụ việc đọc tệp và quản lý bản vá.</string>
+    <string>Tobi AIM cần quyền Mạng cục bộ để kết nối dịch vụ LocalDev/Lockdown trên thiết bị phục vụ việc đọc tệp và quản lý bản vá.</string>
     <key>NSBonjourServices</key>
     <array>
         <string>_apple-mobdev2._tcp</string>
@@ -119,9 +119,9 @@
     <key>LSRequiresIPhoneOS</key>
     <true/>
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>3105 x Tobi Aim cần quyền truy cập ảnh để quản lý hình nền.</string>
+    <string>Tobi AIM cần quyền truy cập ảnh để quản lý hình nền.</string>
     <key>NSDocumentsFolderUsageDescription</key>
-    <string>3105 x Tobi Aim cần quyền truy cập tài liệu.</string>
+    <string>Tobi AIM cần quyền truy cập tài liệu.</string>
     <key>UIApplicationSceneManifest</key>
     <dict>
         <key>UIApplicationSupportsMultipleScenes</key>

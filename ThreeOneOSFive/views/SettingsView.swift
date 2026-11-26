@@ -43,7 +43,7 @@ struct SettingsView: View {
                         SettingsValueRow(
                             symbol: "person.crop.circle.fill",
                             title: "Tác giả / Phát triển",
-                            value: "Tobi Aim"
+                            value: "Tobi AIM"
                         )
                     }
 
@@ -318,7 +318,7 @@ struct SettingsView: View {
                         .font(.system(size: 8, weight: .bold, design: .rounded))
                         .tracking(1.2)
                         .foregroundStyle(AppTheme.subduedText)
-                    Text("3105 × Tobi Aim")
+                    Text("Tobi AIM")
                         .font(.system(size: 12, weight: .bold, design: .rounded))
                         .foregroundStyle(.white)
                 }

@@ -18,20 +18,20 @@
 
 
 "onboarding.step" = "Bước %@ / %@";
-"onboarding.welcome_title" = "Chào mừng đến với 3105 x Tobi Aim";
+"onboarding.welcome_title" = "Chào mừng đến với Tobi AIM";
 "onboarding.welcome_message" = "Quản lý dự án, dữ liệu ứng dụng và các công cụ bảo trì trên cùng một giao diện. Hãy kiểm tra phiên bản iOS trước khi sử dụng các chức năng nâng cao.";
-"onboarding.welcome_badge" = "Định danh chính thức 3105";
+"onboarding.welcome_badge" = "Định danh chính thức Tobi AIM";
 "onboarding.versions_title" = "Phiên bản iOS được hỗ trợ";
-"onboarding.versions_subtitle" = "3105 đã được xác minh trên các khoảng bên dưới. Bản dựng ngoài phạm vi sẽ bị chặn.";
+"onboarding.versions_subtitle" = "Tobi AIM đã được xác minh trên các khoảng bên dưới. Bản dựng ngoài phạm vi sẽ bị chặn.";
 "onboarding.versions_footer" = "Thiết bị này: iOS %@ (%@)";
 "onboarding.beta" = "Bản thử nghiệm";
 "onboarding.developer_beta" = "Bản thử nghiệm dành cho nhà phát triển %@";
 "onboarding.public_beta" = "Bản thử nghiệm công khai %@";
 "onboarding.install_title" = "Yêu cầu chứng chỉ";
-"onboarding.install_message" = "3105 cần phương thức ký được hỗ trợ để truy cập các tính năng của thiết bị.";
+"onboarding.install_message" = "Tobi AIM cần phương thức ký được hỗ trợ để truy cập các tính năng của thiết bị.";
 "onboarding.install_ok" = "Hoạt động với chứng chỉ doanh nghiệp, bao gồm eSign và các bản cài enterprise tương tự.";
 "onboarding.install_bad" = "Không hoạt động với SideStore, AltStore, 3uTools hoặc LiveContainer.";
-"onboarding.install_jailbreak" = "Trên iOS 16 đến iOS 27.2.1, 3105 hoạt động ổn định nhất trên thiết bị chưa jailbreak.";
+"onboarding.install_jailbreak" = "Trên iOS 16 đến iOS 27.2.1, Tobi AIM hoạt động ổn định nhất trên thiết bị chưa jailbreak.";
 "onboarding.install_footer" = "Hãy dùng chứng chỉ được hỗ trợ trên thiết bị chưa jailbreak trước khi tiếp tục.";
 
 "dashboard.exploit_access" = "Quyền exploit";

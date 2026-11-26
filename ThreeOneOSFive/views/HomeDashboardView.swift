@@ -178,7 +178,7 @@ struct HomeDashboardView: View {
                 HStack {
                     StudioEyebrow(text: "KHÔNG GIAN QUẢN LÝ")
                     Spacer()
-                    Text("3105")
+                    Text("TOBI AIM")
                         .font(.system(size: 10, weight: .bold, design: .monospaced))
                         .tracking(1.1)
                         .foregroundStyle(Color.white.opacity(0.82))
@@ -395,7 +395,7 @@ struct HomeDashboardView: View {
             Capsule()
                 .fill(AppTheme.accentSoft.opacity(0.45))
                 .frame(width: 20, height: 2)
-            Text("3105 × Tobi Aim")
+            Text("Tobi AIM")
                 .font(.system(size: 9, weight: .bold, design: .rounded))
                 .tracking(1.6)
                 .foregroundStyle(AppTheme.subduedText.opacity(0.7))
