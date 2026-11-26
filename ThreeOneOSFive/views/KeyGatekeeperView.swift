@@ -560,7 +560,7 @@ struct SecurityLockoutView: View {
                                 .frame(maxWidth: .infinity)
                                 .padding(.vertical, 14)
                                 .background(
-                                    LinearGradient(colors: [AppTheme.accent, AppTheme.accentSoft], startPoint: .leading, endPoint: .trailing),
+                                    LinearGradient(colors: [AppTheme.accent, AppTheme.accentDeep], startPoint: .leading, endPoint: .trailing),
                                     in: RoundedRectangle(cornerRadius: 14, style: .continuous)
                                 )
                             }
@@ -713,7 +713,7 @@ struct KeyGatekeeperView: View {
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 14)
                             .background(
-                                LinearGradient(colors: [AppTheme.accent, AppTheme.accentSoft], startPoint: .leading, endPoint: .trailing),
+                                LinearGradient(colors: [AppTheme.accent, AppTheme.accentDeep], startPoint: .leading, endPoint: .trailing),
                                 in: RoundedRectangle(cornerRadius: 14, style: .continuous)
                             )
                         }

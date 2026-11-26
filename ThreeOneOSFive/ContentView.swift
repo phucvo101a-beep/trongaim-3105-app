@@ -224,7 +224,7 @@ private struct StudioTabBar: View {
                             .lineLimit(1)
                             .minimumScaleFactor(0.8)
                     }
-                    .foregroundStyle(isSelected ? AppTheme.pageBackground : AppTheme.subduedText)
+                    .foregroundStyle(isSelected ? Color.white : AppTheme.subduedText)
                     .frame(maxWidth: .infinity)
                     .frame(height: 58)
                     .background {
@@ -232,14 +232,14 @@ private struct StudioTabBar: View {
                             RoundedRectangle(cornerRadius: 17, style: .continuous)
                                 .fill(
                                     LinearGradient(
-                                        colors: [Color.white, AppTheme.accent, AppTheme.accentSoft],
+                                        colors: [AppTheme.accent, AppTheme.accentDeep],
                                         startPoint: .topLeading,
                                         endPoint: .bottomTrailing
                                     )
                                 )
                                 .overlay {
                                     RoundedRectangle(cornerRadius: 17, style: .continuous)
-                                        .strokeBorder(Color.white.opacity(0.58), lineWidth: 0.8)
+                                        .strokeBorder(AppTheme.silverGlow.opacity(0.55), lineWidth: 0.8)
                                 }
                         }
                     }

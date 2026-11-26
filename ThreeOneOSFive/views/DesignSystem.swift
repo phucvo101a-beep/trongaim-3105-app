@@ -8,20 +8,20 @@ enum AppBrand {
 }
 
 enum AppTheme {
-    // Titanium palette: cool silver for primary actions, with restrained semantic accents.
-    static let accent = Color(red: 0.93, green: 0.95, blue: 0.985)
-    static let accentSoft = Color(red: 0.70, green: 0.77, blue: 0.88)
-    static let accentDeep = Color(red: 0.34, green: 0.43, blue: 0.57)
-    static let pageBackground = Color(red: 0.012, green: 0.017, blue: 0.027)
-    static let consoleBackground = Color(red: 0.043, green: 0.055, blue: 0.074)
-    static let elevatedBackground = Color(red: 0.080, green: 0.098, blue: 0.126)
-    static let subduedText = Color(red: 0.68, green: 0.73, blue: 0.81)
-    static let hairline = Color.white.opacity(0.11)
-    static let silverGlow = Color(red: 0.78, green: 0.86, blue: 0.98)
-    static let info = Color(red: 0.57, green: 0.73, blue: 0.98)
-    static let success = Color(red: 0.48, green: 0.84, blue: 0.69)
-    static let warning = Color(red: 0.96, green: 0.72, blue: 0.39)
-    static let danger = Color(red: 0.96, green: 0.43, blue: 0.45)
+    // Crimson / Sharingan Obsidian palette matching Tobi AIM artwork.
+    static let accent = Color(red: 0.94, green: 0.16, blue: 0.21)
+    static let accentSoft = Color(red: 0.98, green: 0.44, blue: 0.47)
+    static let accentDeep = Color(red: 0.58, green: 0.06, blue: 0.10)
+    static let pageBackground = Color(red: 0.025, green: 0.008, blue: 0.012)
+    static let consoleBackground = Color(red: 0.070, green: 0.022, blue: 0.030)
+    static let elevatedBackground = Color(red: 0.125, green: 0.038, blue: 0.050)
+    static let subduedText = Color(red: 0.80, green: 0.67, blue: 0.69)
+    static let hairline = Color(red: 0.94, green: 0.22, blue: 0.26).opacity(0.18)
+    static let silverGlow = Color(red: 1.00, green: 0.24, blue: 0.28)
+    static let info = Color(red: 0.98, green: 0.48, blue: 0.42)
+    static let success = Color(red: 0.36, green: 0.84, blue: 0.62)
+    static let warning = Color(red: 0.98, green: 0.70, blue: 0.32)
+    static let danger = Color(red: 1.00, green: 0.30, blue: 0.34)
 
     static let pageInset: CGFloat = 20
     static let rowIconSize: CGFloat = 17
@@ -42,7 +42,7 @@ struct AppCardBorder: View {
 
     var body: some View {
         RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-            .strokeBorder(Color.white.opacity(0.12), lineWidth: 1)
+            .strokeBorder(AppTheme.accent.opacity(0.22), lineWidth: 1)
             .accessibilityHidden(true)
     }
 }
@@ -238,7 +238,7 @@ struct AppStatusPill: View {
             Text(title)
                 .font(.system(size: 9, weight: .bold, design: .rounded))
                 .tracking(0.75)
-                .foregroundStyle(AppTheme.accent)
+                .foregroundStyle(Color.white.opacity(0.94))
                 .lineLimit(1)
         }
         .padding(.horizontal, 11)

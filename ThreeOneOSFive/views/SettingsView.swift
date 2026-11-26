@@ -333,7 +333,7 @@ struct SettingsView: View {
         .padding(18)
         .background(
             LinearGradient(
-                colors: [Color(red: 0.14, green: 0.16, blue: 0.20), AppTheme.consoleBackground],
+                colors: [Color(red: 0.21, green: 0.045, blue: 0.065), AppTheme.consoleBackground],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             ),
