@@ -631,7 +631,6 @@ struct KeyGatekeeperView: View {
     @ObservedObject var keyAuth = KeyAuthManager.shared
     @State private var inputKey: String = ""
     @State private var showCopiedHWID: Bool = false
-    @Environment(\.openURL) private var openURL
 
     var body: some View {
         ZStack {
@@ -762,18 +761,6 @@ struct KeyGatekeeperView: View {
                     .background(AppTheme.consoleBackground, in: RoundedRectangle(cornerRadius: 16))
                     .overlay { AppCardBorder(cornerRadius: 16) }
 
-                    Button {
-                        if let u = URL(string: "https://phuciosvn.com") {
-                            openURL(u)
-                        }
-                    } label: {
-                        HStack(spacing: 6) {
-                            Image(systemName: "cart.fill")
-                            Text("Mua Key Chính Thức tại phuciosvn.com")
-                        }
-                        .font(.system(size: 12.5, weight: .bold, design: .rounded))
-                        .foregroundStyle(AppTheme.accentSoft)
-                    }
                     Spacer(minLength: 20)
                 }
                 .padding(.horizontal, 20)
